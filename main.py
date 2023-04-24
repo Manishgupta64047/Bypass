@@ -53,9 +53,9 @@ def loopthread(message):
 # start command
 @app.on_message(filters.command(["start"]))
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
-    app.send_message(message.chat.id, f"__👋 Hi Dear👶**{message.from_user.mention}**, i am Link Bypasser Bot, just send me any supported links and i will you get you results.\nCheckout /help to Read More__",
-    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🍿 Updates🍿", url="https://t.me/mdisk_bots")]]), reply_to_message_id=message.id)
-
+    app.send_message(message.chat.id, f"__👋 Hi Dear👶**{message.from_user.mention}**, i am Link Bypasser Bot, just send me any supported links and i will you get you results.\n Due To Overaload Only My Channel Subscribers can use this bot__",
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🍿Join Updates Channel🍿", url="https://t.me/mdisk_bots")]]), reply_to_message_id=message.id)
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("⚡ Try Again After Joining ⚡", url="http://t.me/Url_Links_Bypasser_Bot?start=true")]]), reply_to_message_id=message.id)
 
 # help command
 @app.on_message(filters.command(["help"]))
